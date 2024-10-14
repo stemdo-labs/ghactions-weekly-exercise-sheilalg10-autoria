@@ -1,0 +1,11 @@
+name: Llamada a cd
+on:
+  push:
+    branches:
+      - main
+      - development
+  workflow_dispatch:
+jobs:
+  cd-call:
+    uses: ./.github/workflows/cd-reusable.yalm
+  
